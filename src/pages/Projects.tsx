@@ -1,7 +1,5 @@
 import "./Projects.css"
 
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-
 import projects from "../Data/projects";
 
 function Projects () {
