@@ -1,0 +1,24 @@
+@use "../styles/variables" as *;
+@use "../styles/mixins" as *;
+@use "../styles/sections" as *;
+
+
+
+.profile-intro {
+  max-width: 75rem;
+  display: flex;
+  flex-direction: row;
+  background-color: $color-secondary;
+
+  &__image {
+    max-height: 20rem;
+    border-radius: 50%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: $mobile-card-padding;
+  }
+
+}

@@ -1,0 +1,43 @@
+@use "./variables" as *;
+
+@mixin devices($breakpoint) {
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tabletL {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  }
+}
+
+@mixin gridGallery($gutter-size, $elements) {
+  gap: $gutter-size;
+  grid-template-columns: repeat($elements, 1fr);
+}
+
+@mixin cardGallery() {
+  width: 100%;
+  display: grid;
+
+  @include gridGallery($mobile-gutter, 1);
+
+  @include devices(tablet) {
+    @include gridGallery($tablet-gutter, 2);
+  }
+  @include devices(tabletL) {
+    @include gridGallery($tablet-l-gutter, 2);
+  }
+
+  @include devices(desktop) {
+    @include gridGallery($desktop-gutter, 3);
+  }
+}
