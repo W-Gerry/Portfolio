@@ -1,11 +1,13 @@
+import "./Home.scss";
 
+import HomepageLogo from "../components/homepage/HomepageLogo";
 
 function Home () {
-    return (
-        <>
-            <h1>This be the home page</h1>
-        </>
-    )
+  return (
+    <div className="homepage-wrapper">
+      <HomepageLogo />
+    </div>
+  )
 };
 
 export default Home;

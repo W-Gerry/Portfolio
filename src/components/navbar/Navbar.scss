@@ -1,0 +1,40 @@
+@use "../../styles/variables" as *;
+
+.Navbar-wrapper {
+    width: 100vw;
+    height: 5rem;
+
+    background-color: rgba(0, 0, 0, 0.197);
+}
+
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 35%;
+    height: 4rem;
+
+    margin: auto;
+}
+
+.Navbar__Item {
+    margin-bottom: 0.25rem;
+    transition: transform 0.25s;
+}
+
+.Navbar__Item:hover{
+    transform: scale(1.1)
+}
+
+.Navbar__Link {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #dcdcdc;
+}
+
+.Navbar__Link--active {
+    font-weight: bold;
+    color: rgb(225, 127, 7);
+}

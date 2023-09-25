@@ -7,6 +7,12 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  background-color: $color-background;
 }
 
 a {
@@ -16,10 +22,4 @@ a {
 
 li {
   list-style: none;
-}
-
-:root {
-  // font-family: "Poiret One", sans-serif;
-  font-family: "Forum", sans-serif;
-  background-color: $color-background;
 }
