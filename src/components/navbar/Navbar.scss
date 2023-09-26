@@ -3,16 +3,17 @@
 .Navbar-wrapper {
   visibility: hidden;
   opacity: 0;
+  transition-timing-function: ease-in;
+  transition: visibility 0s 0.5s, opacity 0.5s;
+
   position: fixed;
   top: 0;
+  z-index: 10;
 
   width: 100vw;
   height: 4rem;
 
   background-color: rgba(0, 0, 0, 0.197);
-
-  transition-timing-function: ease-in;
-  transition: visibility 0s 0.5s, opacity 0.5s;
 }
 
 .Visible {
