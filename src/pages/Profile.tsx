@@ -1,4 +1,4 @@
-import profileImage from "../assets/images/profile/profile.jpg";
+import profileImage from "../assets/profile/profile.jpg";
 
 import "./Profile.scss";
 

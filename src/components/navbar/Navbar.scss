@@ -1,40 +1,56 @@
 @use "../../styles/variables" as *;
 
 .Navbar-wrapper {
-    width: 100vw;
-    height: 5rem;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
 
-    background-color: rgba(0, 0, 0, 0.197);
+  width: 100vw;
+  height: 4rem;
+
+  background-color: rgba(0, 0, 0, 0.197);
+
+  transition-timing-function: ease-in;
+  transition: visibility 0s 0.5s, opacity 0.5s;
+}
+
+.Visible {
+  visibility: visible;
+  opacity: 1;
+
+  transition-timing-function: ease-in;
+  transition: opacity 0.5s;
 }
 
 .Navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    
-    width: 35%;
-    height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
-    margin: auto;
+  width: 35%;
+  height: 4rem;
+
+  margin: auto;
 }
 
 .Navbar__Item {
-    margin-bottom: 0.25rem;
-    transition: transform 0.25s;
+  margin-bottom: 0.25rem;
+  transition: transform 0.25s;
 }
 
-.Navbar__Item:hover{
-    transform: scale(1.1)
+.Navbar__Item:hover {
+  transform: scale(1.1)
 }
 
 .Navbar__Link {
-    text-decoration: none;
-    font-size: 2rem;
-    color: #dcdcdc;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #dcdcdc;
 }
 
 .Navbar__Link--active {
-    font-weight: bold;
-    color: rgb(225, 127, 7);
+  font-weight: bold;
+  color: rgb(225, 127, 7);
 }

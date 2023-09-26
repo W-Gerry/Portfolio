@@ -1,7 +1,7 @@
 import "./HomepageLogo.scss";
 
-import logoLarge from "../../assets/images/general/Logo.svg"
-import chevronDown from "../../assets/images/navigation/chevron_down.svg"
+import logoLarge from "../../assets/general/Logo.svg"
+import chevronDown from "../../assets/navigation/chevrons_down.svg"
 
 const HomepageLogo = () => {
   return (

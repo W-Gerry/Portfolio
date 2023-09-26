@@ -1,6 +1,6 @@
-import "./Projects.scss"
+import "./ProjectGallery.scss"
 
-import projects from "../data/projects";
+import projects from "../../data/projects";
 
 function Projects () {
   return (

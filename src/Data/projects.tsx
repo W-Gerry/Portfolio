@@ -1,6 +1,6 @@
 import Project from "../models/Project";
 
-import marsImg from "../assets/images/mars-mission/mars-cover-img.png"
+import marsImg from "../assets/mars-mission/mars-cover-img.png"
 
 
 const projects: Project[] = [
