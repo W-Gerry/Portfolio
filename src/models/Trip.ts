@@ -1,8 +1,8 @@
 interface Trip {
   title?: string;
   country: string;
-  startDate: Date;
-  endDate: Date;
+  startDate: string;
+  endDate: string;
   description: string;
   iconImage: string;
   images: [];

@@ -4,8 +4,8 @@ const trips: Trip[] = [
   {
     title: "Operation Raleigh",
     country: "Costa Rica",
-    startDate: new Date(2022, 1, 28),
-    endDate: new Date(2022, 5, 12),
+    startDate: "2022-01-28 00:00:00",
+    endDate: "2022-05-05 00:00:00",
     description: "Placeholder",
     iconImage: "../assets/trips/costa_rica.svg",
     images: [],
@@ -13,8 +13,8 @@ const trips: Trip[] = [
   {
     title: "Operation Raleigh",
     country: "Costa Rica",
-    startDate: new Date(2022, 1, 28),
-    endDate: new Date(2022, 5, 12),
+    startDate: "2022-01-28 00:00:00",
+    endDate: "2022-05-05 00:00:00",
     description: "Placeholder",
     iconImage: "../assets/trips/costa_rica.svg",
     images: [],
@@ -22,8 +22,8 @@ const trips: Trip[] = [
   {
     title: "Operation Raleigh",
     country: "Costa Rica",
-    startDate: new Date(2022, 1, 28),
-    endDate: new Date(2022, 5, 12),
+    startDate: "2022-01-28 00:00:00",
+    endDate: "2022-05-05 00:00:00",
     description: "Placeholder",
     iconImage: "../assets/trips/costa_rica.svg",
     images: [],
@@ -31,8 +31,8 @@ const trips: Trip[] = [
   {
     title: "Operation Raleigh",
     country: "Costa Rica",
-    startDate: new Date(2022, 1, 28),
-    endDate: new Date(2022, 5, 12),
+    startDate: "2022-01-28 00:00:00",
+    endDate: "2022-05-05 00:00:00",
     description: "Placeholder",
     iconImage: "../assets/trips/costa_rica.svg",
     images: [],

@@ -1,5 +1,6 @@
 import iconImage from "../../assets/general/Logo.svg"
 import trips from "../../data/trips";
+import { toShortWrittenDate } from "../../util/DateConversion";
 
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 
@@ -20,7 +21,7 @@ const Timeline = ({ isVisible } : TimelineProps) => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: 'rgb(8,31,27)', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(0, 0, 0)' }}
-          date="2011 - present"
+          date={`${toShortWrittenDate(trip.startDate)} - ${toShortWrittenDate(trip.endDate)}`}
           iconStyle={{ 
             background: 'rgb(16,61,54)', 
             color: '#fff',

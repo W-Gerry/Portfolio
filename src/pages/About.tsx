@@ -1,4 +1,5 @@
 import profileImage from "../assets/profile/profile.jpg";
+import coverImage from "../assets/profile/cover_photo.jpg";
 import Button from "../components/button/Button";
 import Timeline from "../components/timeline/trip_timeline";
 
@@ -19,6 +20,13 @@ function About() {
 
   return (
     <>
+      <div className="Cover-image-container">
+        <img 
+          className="Cover-image-container__image"
+          src={coverImage}
+          alt="Cover photo of a valley in Costa Rica"
+        />
+      </div>
       <h1>About Me</h1>
       <section className="container">
         <div className="Profile-intro">
