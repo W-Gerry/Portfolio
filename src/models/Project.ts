@@ -1,9 +1,7 @@
-import { ReactNode } from 'react'
-
 interface Project {
-  name: string
-  description: ReactNode
-  imageUrl: string
+  name: string;
+  description: string;
+  imageUrl: string;
   link?: string
 }
 

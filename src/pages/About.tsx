@@ -1,4 +1,5 @@
 import profileImage from "../assets/profile/profile.jpg";
+import Timeline from "../components/timeline/timeline";
 
 import "./About.scss";
 
@@ -19,6 +20,7 @@ function About() {
           </div>
         </div>
       </section>
+      <Timeline />
     </>
   )
 };

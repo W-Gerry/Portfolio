@@ -12,12 +12,12 @@ const projects: Project[] = [
     },
     {
         name: "Bus Board",
-        description: <>Description of Bus Board project.</>,
+        description: "Description of Bus Board project.",
         imageUrl: marsImg
     },
     {
         name: "Photo Viewer",
-        description: <>Description of Photo Viewer project.</>,
+        description: "Description of Photo Viewer project.",
         imageUrl: marsImg
     },
 ]
