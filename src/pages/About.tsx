@@ -1,26 +1,51 @@
 import profileImage from "../assets/profile/profile.jpg";
+import Button from "../components/button/Button";
 import Timeline from "../components/timeline/timeline";
+
+import { useState } from "react";
 
 import "./About.scss";
 
 function About() {
+  const [timelineVisibility, setTimelineVisibility] = useState(false);
+
+  const handleClick = () => {
+    if (timelineVisibility) {
+      setTimelineVisibility(false)
+    } else {
+      setTimelineVisibility(true)
+    }
+  }
+
   return (
     <>
       <h1>About Me</h1>
       <section className="container">
-        <div className="profile-intro">
-          <img className="profile-intro__image" src={profileImage} />
-          <div className="profile-intro__content">
-            <h2 className="profile-intro__content__about-me">
+        <div className="Profile-intro">
+          <img className="Profile-intro__image" src={profileImage} />
+          <div className="Profile-intro__content">
+            <h2 className="Profile-intro__content__about-me">
               About Me
             </h2>
-            <p className="profile-intro__content__text">
+            <p className="Profile-intro__content__text">
               This is the about me section
             </p>
           </div>
         </div>
       </section>
-      <Timeline />
+      <section className="Section-dark">
+        <div className="Section-dark__text">
+          <h2>Travel</h2>
+          <p>Although I do love playing with computers, I also love exploring the world and travelling to new places. I have been incredibly lucky to visit some beautiful countries and hoping to see a few more!</p>
+        </div>
+        <Button 
+          type={"submit"}
+          onClick={() => handleClick()}
+        >
+          See some of my travels
+        </Button>
+      </section>
+      <Timeline isVisible={timelineVisibility}/>
     </>
   )
 };

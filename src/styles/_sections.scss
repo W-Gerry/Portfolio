@@ -19,7 +19,7 @@
   }
 }
 
-section {
+Section {
   width: 100vw;
   padding: $mobile-section-spacing 0;
 
@@ -32,7 +32,7 @@ section {
   }
 }
 
-.section-dark {
+.Section-dark {
   background-color: $color-primary;
   color: $color-foreground;
 }

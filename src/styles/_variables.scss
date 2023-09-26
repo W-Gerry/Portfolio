@@ -22,13 +22,13 @@ $mobile-font-size-secondary: 0.75rem;
 
 $tablet-font-size-title: 3.5rem;
 $tablet-font-size-subtitle: 2.5rem;
-$tablet-font-size-button: 1.25rem;
+$tablet-font-size-button: 1rem;
 $tablet-font-size-body: 1.2rem;
 $tablet-font-size-secondary: 0.9rem;
 
 $desktop-font-size-title: 4rem;
 $desktop-font-size-subtitle: 3rem;
-$desktop-font-size-button: 1.5rem;
+$desktop-font-size-button: 1.1rem;
 $desktop-font-size-body: 1.3rem;
 $desktop-font-size-secondary: 1rem;
 
@@ -39,13 +39,13 @@ $lighterWeight: 200;
 // Spacings
 
 $mobile-gutter: 2rem;
-$mobile-section-spacing: 2rem;
+$mobile-section-spacing: 1.5rem;
 $mobile-card-padding: 1rem;
 $mobile-title-margin: 1rem;
 $mobile-subtitle-margin: 0.5rem;
 
 $tablet-gutter: 3rem;
-$tablet-section-spacing: 3rem;
+$tablet-section-spacing: 2rem;
 $tablet-card-padding: 1rem;
 $tablet-title-margin: 1.8rem;
 $tablet-subtitle-margin: 0.8rem;
@@ -53,7 +53,17 @@ $tablet-subtitle-margin: 0.8rem;
 $tablet-l-gutter: 4rem;
 
 $desktop-gutter: 4rem;
-$desktop-section-spacing: 5rem;
+$desktop-section-spacing: 3rem;
 $desktop-card-padding: 1.5rem;
 $desktop-title-margin: 2rem;
 $desktop-subtitle-margin: 1rem;
+
+// Buttons
+$mobile-button-height: 3rem;
+$mobile-button-width: 5rem;
+
+$tablet-button-height: 3rem;
+$tablet-button-width: 5rem;
+
+$desktop-button-height: 5rem;
+$desktop-button-width: 12rem;

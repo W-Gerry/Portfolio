@@ -6,9 +6,14 @@ import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeli
 import "react-vertical-timeline-component/style.min.css";
 import "./timeline.scss"
 
-const Timeline = () => {
+
+interface TimelineProps {
+  isVisible: boolean;
+}
+
+const Timeline = ({ isVisible } : TimelineProps) => {
   return (
-    <div className="Timeline-wrapper">
+    <div className={`Timeline-wrapper ${isVisible && `Visible`}`}>
       <VerticalTimeline>
         {trips.map((trip) => 
           <VerticalTimelineElement
@@ -25,7 +30,7 @@ const Timeline = () => {
             />
           }>
             <h3 className="vertical-timeline-element-title">{trip.country}</h3>
-            <h4 className="vertical-timeline-element-subtitle">{trip.description}</h4>
+            <h4 className="vertical-timeline-element-subtitle">{trip.title}</h4>
             <p>
               {trip.description}
             </p>

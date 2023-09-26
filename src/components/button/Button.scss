@@ -1,0 +1,28 @@
+@use "../../styles/variables" as *;
+
+.Button {
+  height: $desktop-button-height;
+  width: $desktop-button-width;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem 2rem;
+
+  border: 0.125rem solid $color-background;
+  border-radius: 0.25rem;
+  background-color: $color-background;
+
+  font-size: $desktop-font-size-button;
+  color: #dcdcdc;
+
+  transition: background-color 0.25s;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-primary;
+    border: 0.125rem solid $color-background;
+    color: $color-foreground;
+  }
+}

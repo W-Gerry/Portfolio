@@ -1,6 +1,19 @@
 .Timeline-wrapper {
+  visibility: hidden;
+  opacity: 0;
+  transition-timing-function: ease-in;
+  transition: visibility 0s 0.5s, opacity 0.5s;
+  
   width: 75rem;
   margin: auto;
+}
+
+.Visible {
+  visibility: visible;
+  opacity: 1;
+
+  transition-timing-function: ease-in;
+  transition: opacity 0.5s;
 }
 
 .Timeline-logo {
