@@ -1,4 +1,4 @@
-import iconImage from "../../assets/general/Logo_small.png"
+import iconImage from "../../assets/general/Logo.svg"
 import trips from "../../data/trips";
 
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
@@ -19,16 +19,24 @@ const Timeline = ({ isVisible } : TimelineProps) => {
           <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: 'rgb(8,31,27)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+          contentArrowStyle={{ borderRight: '7px solid  rgb(0, 0, 0)' }}
           date="2011 - present"
-          iconStyle={{ background: 'rgb(16,61,54)', color: '#fff' }}
+          iconStyle={{ 
+            background: 'rgb(16,61,54)', 
+            color: '#fff',
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
           icon={
             <img 
               src={iconImage} 
               alt="Small logo image"
               className="Timeline-logo"
             />
-          }>
+          }
+          // iconOnClick={ Function }
+          >
             <h3 className="vertical-timeline-element-title">{trip.country}</h3>
             <h4 className="vertical-timeline-element-subtitle">{trip.title}</h4>
             <p>

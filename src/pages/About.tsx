@@ -1,6 +1,6 @@
 import profileImage from "../assets/profile/profile.jpg";
 import Button from "../components/button/Button";
-import Timeline from "../components/timeline/timeline";
+import Timeline from "../components/timeline/trip_timeline";
 
 import { useState } from "react";
 
