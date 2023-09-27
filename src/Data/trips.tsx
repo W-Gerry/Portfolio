@@ -1,5 +1,8 @@
 import Trip from "../models/Trip.ts";
 
+import iconCostaRica from "../assets/trips/costa_rica.svg"
+
+// Add new trips to top of list
 const trips: Trip[] = [
   {
     title: "Operation Raleigh",
@@ -7,7 +10,7 @@ const trips: Trip[] = [
     startDate: "2022-01-28 00:00:00",
     endDate: "2022-05-05 00:00:00",
     description: "Placeholder",
-    iconImage: "../assets/trips/costa_rica.svg",
+    iconImage: iconCostaRica,
     images: [],
   },
   {

@@ -1,4 +1,3 @@
-import iconImage from "../../assets/general/Logo.svg"
 import trips from "../../data/trips";
 import { toShortWrittenDate } from "../../util/DateConversion";
 
@@ -28,10 +27,12 @@ const Timeline = ({ isVisible } : TimelineProps) => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            objectFit: "contain",
+            overflow: "hidden",
           }}
           icon={
             <img 
-              src={iconImage} 
+              src={trip.iconImage} 
               alt="Small logo image"
               className="Timeline-logo"
             />
