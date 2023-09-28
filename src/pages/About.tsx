@@ -54,6 +54,42 @@ function About() {
         </Button>
       </section>
       <Timeline isVisible={timelineVisibility}/>
+      <section className="Section-medium">
+        <div className="Section-medium__text">
+          <h2>Travel</h2>
+          <p>Although I do love playing with computers, I also love exploring the world and travelling to new places. I have been incredibly lucky to visit some beautiful countries and hoping to see a few more!</p>
+        </div>
+        <Button 
+          type={"submit"}
+          onClick={() => handleClick()}
+        >
+          See some of my travels
+        </Button>
+      </section>
+      <section className="Section-light">
+        <div className="Section-light__text">
+          <h2>Travel</h2>
+          <p>Although I do love playing with computers, I also love exploring the world and travelling to new places. I have been incredibly lucky to visit some beautiful countries and hoping to see a few more!</p>
+        </div>
+        <Button 
+          type={"submit"}
+          onClick={() => handleClick()}
+        >
+          See some of my travels
+        </Button>
+      </section>
+      <section className="Section-lightest">
+        <div className="Section-lightest__text">
+          <h2>Travel</h2>
+          <p>Although I do love playing with computers, I also love exploring the world and travelling to new places. I have been incredibly lucky to visit some beautiful countries and hoping to see a few more!</p>
+        </div>
+        <Button 
+          type={"submit"}
+          onClick={() => handleClick()}
+        >
+          See some of my travels
+        </Button>
+      </section>
     </>
   )
 };

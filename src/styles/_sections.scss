@@ -33,6 +33,21 @@ Section {
 }
 
 .Section-dark {
-  background-color: $color-primary;
+  background-color: $section-color-dark;
+  color: $color-foreground;
+}
+
+.Section-medium {
+  background-color: $section-color-medium;
+  color: $color-foreground;
+}
+
+.Section-light {
+  background-color: $section-color-light;
+  color: $color-foreground;
+}
+
+.Section-lightest {
+  background-color: $section-color-lightest;
   color: $color-foreground;
 }

@@ -13,7 +13,7 @@ interface TimelineProps {
 
 const Timeline = ({ isVisible } : TimelineProps) => {
   return (
-    <div className={`Timeline-wrapper ${isVisible && `Visible`}`}>
+    <div className={`Timeline-wrapper ${isVisible && `Timeline-visible`}`}>
       <VerticalTimeline>
         {trips.map((trip) => 
           <VerticalTimelineElement

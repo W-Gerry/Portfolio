@@ -1,14 +1,16 @@
 .Timeline-wrapper {
+  display: none;
   visibility: hidden;
   opacity: 0;
   transition-timing-function: ease-in;
-  transition: visibility 0s 0.5s, opacity 0.5s;
+  transition: display 0.5s, visibility 0s 0.5s, opacity 0.5s;
   
   width: 75rem;
   margin: auto;
 }
 
-.Visible {
+.Timeline-visible {
+  display: block;
   visibility: visible;
   opacity: 1;
 
