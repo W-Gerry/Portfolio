@@ -1,6 +1,7 @@
 @use "../styles/variables" as *;
 @use "../styles/mixins" as *;
 @use "../styles/sections" as *;
+@use "../styles/typography" as *;
 
 .Cover-image-container {
   width: 100%;
@@ -13,22 +14,29 @@
   }
 }
 
+h1 {
+  color: #dcdcdc;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
 .Profile-intro {
   max-width: 75rem;
   display: flex;
   flex-direction: row;
-  background-color: $color-secondary;
-
-  margin-bottom: 3rem;
+  justify-content: center;
+  background-color: $color-background;
+  margin-bottom: 3.5rem;
 
   &__image {
     max-height: 20rem;
-    border-radius: 50%;
+    border-radius: 1rem;
   }
 
   &__content {
     display: flex;
     flex-direction: column;
     padding: $mobile-card-padding;
+    width: 25rem;
   }
 }

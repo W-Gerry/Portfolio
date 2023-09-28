@@ -1,4 +1,4 @@
-import profileImage from "../assets/profile/profile.jpg";
+import profileImageTrek from "../assets/profile/profile_image_trek.jpg";
 import coverImage from "../assets/profile/cover_photo.jpg";
 import TravelTimeline from "../components/timeline/trip_timeline";
 import AboutSection from "../components/aboutsection/AboutSection";
@@ -30,11 +30,8 @@ function About() {
       <h1>About Me</h1>
       <section className="container">
         <div className="Profile-intro">
-          <img className="Profile-intro__image" src={profileImage} />
+          <img className="Profile-intro__image" src={profileImageTrek} />
           <div className="Profile-intro__content">
-            <h2 className="Profile-intro__content__about-me">
-              About Me
-            </h2>
             <p className="Profile-intro__content__text">
               This is the about me section
             </p>
@@ -76,7 +73,7 @@ function About() {
         headingAlignment="Right"
         text={<>I'm always up for trying new recipes, although maybe just once depending on how complicated the recipe is. As a Cornishman you can't beat a good pasty or barbecue by the beach.</>}
         onClick={showOrHideTimeline}
-        buttonText={<>Check out some of my creations</>}
+        buttonText={<>Check out some recipes</>}
       />
     </>
   )
