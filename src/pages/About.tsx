@@ -1,7 +1,9 @@
 import profileImageTrek from "../assets/profile/profile_image_trek.jpg";
 import coverImage from "../assets/profile/cover_photo.jpg";
 import TravelTimeline from "../components/timeline/trip_timeline";
+import PhotographyGallery from "../components/photographygallery/PhotographyGallery";
 import AboutSection from "../components/aboutsection/AboutSection";
+import aboutPara from "../data/aboutpara";
 
 import { useState } from "react";
 
@@ -9,12 +11,21 @@ import "./About.scss";
 
 function About() {
   const [timelineVisibility, setTimelineVisibility] = useState(false);
+  const [photoGalleryVisibility, setPhotoGalleryVisibility] = useState(false);
 
   const showOrHideTimeline = () => {
     if (timelineVisibility) {
       setTimelineVisibility(false)
     } else {
       setTimelineVisibility(true)
+    }
+  }
+
+  const showOrHidePhotoGallery = () => {
+    if (photoGalleryVisibility) {
+      setPhotoGalleryVisibility(false)
+    } else {
+      setPhotoGalleryVisibility(true)
     }
   }
 
@@ -33,7 +44,7 @@ function About() {
           <img className="Profile-intro__image" src={profileImageTrek} />
           <div className="Profile-intro__content">
             <p className="Profile-intro__content__text">
-              This is the about me section
+              {aboutPara}
             </p>
           </div>
         </div>
@@ -64,9 +75,10 @@ function About() {
         heading={<>Photography</>}
         headingAlignment="Left"
         text={<>During my travels I also found a of a love for (amateur) photography although I'm never sure what to do with all of them.</>}
-        onClick={showOrHideTimeline}
+        onClick={showOrHidePhotoGallery}
         buttonText={<>See some of my favourites</>}
       />
+      <PhotographyGallery isVisible={photoGalleryVisibility}/>
       <AboutSection
         sectionColor={"lightest"}
         heading={<>Cooking</>}

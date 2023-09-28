@@ -20,7 +20,7 @@
 }
 
 Section {
-  width: 100vw;
+  width: 100%;
   padding: $mobile-section-spacing 0;
 
   @include devices(tablet) {
