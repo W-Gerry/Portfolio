@@ -9,13 +9,13 @@ interface GalleryViewerProps {
 export function GalleryViewer ({setSelectedImage, photoImages}:GalleryViewerProps) {
   return (
     <>
-      <div className="thumbnail-gallery-wrapper">
-        <h2>Select an Image</h2>
-        <div className="thumbnail-gallery">
+      <div className="Thumbnail-gallery-wrapper">
+        <h2 className="Thumbnail-gallery-header">Click an Image to Focus</h2>
+        <div className="Thumbnail-gallery">
           {photoImages.map((image, index) =>
             <img
               id={index.toString()}
-              className="thumbnail"
+              className="Thumbnail"
               src={image}
               onClick={() => {
                 setSelectedImage(image);

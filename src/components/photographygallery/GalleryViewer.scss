@@ -3,22 +3,30 @@
 @use "../../styles/sections" as *;
 @use "../../styles/typography" as *;
 
-.thumbnail-gallery-wrapper {
+.Thumbnail-gallery-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 75%;
 }
 
-.thumbnail-gallery {
+.Thumbnail-gallery-header {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #dcdcdc;
+}
+
+.Thumbnail-gallery {
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 10px;
+    align-items: center;
+    justify-content: center;
+
     gap: 20px;
     width: 100%;
 }
 
-.thumbnail {
+.Thumbnail {
     height: 200px;
     width: 300px;
     border-radius: 25px;
@@ -33,18 +41,15 @@
     border: 5px solid orange;
 }
 
-.thumbnail:hover {
+.Thumbnail:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 5px 2px white;
     transition-duration: 0.25s;
 }
 
-.thumbnail-selected:hover {
+.Thumbnail-selected:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 5px 2px white;
     transition-duration: 0.25s;
 }
 
-h2 {
-    text-align: center;
-}
