@@ -8,9 +8,11 @@ import aboutPara from "../data/aboutpara";
 import { useState } from "react";
 
 import "./About.scss";
+import SportPhotoCarousel from "../components/sportphotocarousel/SportPhotoCarousel";
 
 function About() {
   const [timelineVisibility, setTimelineVisibility] = useState(false);
+  const [sportCarouselVisibility, setSportCarouselVisibility] = useState(false);
   const [photoGalleryVisibility, setPhotoGalleryVisibility] = useState(false);
 
   const showOrHideTimeline = () => {
@@ -19,6 +21,14 @@ function About() {
     } else {
       setTimelineVisibility(true)
     }
+  }
+
+  const showOrHideSportCarousel = () => {
+  if (sportCarouselVisibility) {
+    setSportCarouselVisibility(false)
+  } else {
+    setSportCarouselVisibility(true)
+  }
   }
 
   const showOrHidePhotoGallery = () => {
@@ -38,7 +48,7 @@ function About() {
           alt="Cover photo of a valley in Costa Rica"
         />
       </div>
-      <h1>About Me</h1>
+      <h1>Wasson Shag*</h1>
       <section className="container">
         <div className="Profile-intro">
           <img className="Profile-intro__image" src={profileImageTrek} />
@@ -57,7 +67,7 @@ function About() {
         onClick={showOrHideTimeline}
         buttonText={<>See some of my travels</>}
       />
-      <TravelTimeline isVisible={timelineVisibility}/>
+      <TravelTimeline isVisible={timelineVisibility} />
       <AboutSection
         sectionColor={"medium"}
         heading={<>Sports</>}
@@ -67,9 +77,10 @@ function About() {
           <br/>
           I also played American Football at university and every so often I chase a golfball around the fairway (or rough), still chasing that hole in one though.</>
         }
-        onClick={showOrHideTimeline}
+        onClick={showOrHideSportCarousel}
         buttonText={<>See more</>}
       />
+      <SportPhotoCarousel isVisible={sportCarouselVisibility} />
       <AboutSection
         sectionColor={"light"}
         heading={<>Photography</>}
@@ -78,7 +89,7 @@ function About() {
         onClick={showOrHidePhotoGallery}
         buttonText={<>See some of my favourites</>}
       />
-      <PhotographyGallery isVisible={photoGalleryVisibility}/>
+      <PhotographyGallery isVisible={photoGalleryVisibility} />
       <AboutSection
         sectionColor={"lightest"}
         heading={<>Cooking</>}

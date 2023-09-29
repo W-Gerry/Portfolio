@@ -5,8 +5,8 @@ interface GalleryViewerProps {
   photoImages: string[];
 }
 
-
 export function GalleryViewer ({setSelectedImage, photoImages}:GalleryViewerProps) {
+
   return (
     <>
       <div className="Thumbnail-gallery-wrapper">
@@ -15,6 +15,7 @@ export function GalleryViewer ({setSelectedImage, photoImages}:GalleryViewerProp
           {photoImages.map((image, index) =>
             <img
               id={index.toString()}
+              key={index}
               className="Thumbnail"
               src={image}
               onClick={() => {

@@ -1,0 +1,27 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/sections" as *;
+@use "../../styles/typography" as *;
+
+.Placeholder {
+  display: none;
+
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition-timing-function: ease-in;
+  transition: display 0.5s, visibility 0s 0.5s, opacity 0.5s;
+}
+
+.Placeholder-visible {
+  display: block;
+
+  visibility: visible;
+  opacity: 1;
+
+  transition-timing-function: ease-in;
+  transition: opacity 0.5s;
+}
