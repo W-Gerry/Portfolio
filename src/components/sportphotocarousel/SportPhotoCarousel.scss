@@ -14,10 +14,6 @@
 
   transition-timing-function: ease-in;
   transition: display 0.5s, visibility 0s 0.5s, opacity 0.5s;
-
-  &__image {
-
-  }
 }
 
 .carousel-visible {
@@ -43,7 +39,7 @@
   width: 99%;
   height: 99%;
   border-radius: 8px;
-  border: #ff00008e solid 2px;
+  border: $color-primary solid 2px;
 }
 
 .slide_direction {
@@ -53,7 +49,7 @@
 
 .left,
 .right {
-  background-color: #fb666675;
+  background-color: $color-primary;
   color: #fff;
   padding: 10px 8px 8px 13px;
   margin: 0 20px;
@@ -62,8 +58,8 @@
   top: 0;
   bottom: 0;
   margin: auto 10px;
-  height: 25px;
-  width: 25px;
+  height: 35px;
+  width: 35px;
 }
 
 .left {
@@ -82,12 +78,13 @@
 }
 
 .dot {
-  background-color: #333;
+  background-color: #dcdcdc;
+  border: 1px solid #dcdcdc;
   width: 15px;
   height: 15px;
   border-radius: 50%;
 }
 
 .active {
-  background-color: #fa2020;
+  background-color: $color-primary;
 }

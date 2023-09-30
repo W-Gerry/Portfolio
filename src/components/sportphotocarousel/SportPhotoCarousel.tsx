@@ -103,6 +103,7 @@ const SportPhotoCarousel = ({ isVisible }: SportPhotoCarouselProps) => {
               height="20"
               viewBox="0 96 960 960"
               width="20"
+              fill="#dcdcdc"
             >
               <path d="M400 976 0 576l400-400 56 57-343 343 343 343-56 57Z" />
             </svg>
@@ -118,6 +119,7 @@ const SportPhotoCarousel = ({ isVisible }: SportPhotoCarouselProps) => {
               height="20"
               viewBox="0 96 960 960"
               width="20"
+              fill="#dcdcdc"
             >
               <path d="m304 974-56-57 343-343-343-343 56-57 400 400-400 400Z" />
             </svg>
