@@ -1,3 +1,8 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/sections" as *;
+@use "../../styles/typography" as *;
+
 .Timeline-wrapper {
   display: none;
   visibility: hidden;
@@ -7,6 +12,17 @@
   
   width: 75rem;
   margin: auto;
+
+  @include devices(desktop) {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition-timing-function: ease-in;
+    transition: display 0.5s, visibility 0s 0.5s, opacity 0.5s;
+    
+    width: 75rem;
+    margin: auto;
+  }
 }
 
 .Timeline-visible {
@@ -16,6 +32,15 @@
 
   transition-timing-function: ease-in;
   transition: opacity 0.5s;
+
+  @include devices(desktop) {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+
+    transition-timing-function: ease-in;
+    transition: opacity 0.5s;
+  }
 }
 
 .Timeline-logo {
@@ -23,4 +48,23 @@
   height: 60px;
   width: 60px;
   border-radius: 19px;
+
+  @include devices(desktop) {
+    object-fit: contain;
+    height: 60px;
+    width: 60px;
+    border-radius: 19px;
+  }
+}
+
+.vertical-timeline-element--work {
+  width: 20rem;
+
+  @include devices(tablet) {
+    width: 40rem;
+  }
+
+  @include devices(desktop) {
+    width: unset;
+  }
 }
