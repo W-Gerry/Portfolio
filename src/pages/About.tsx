@@ -39,6 +39,10 @@ function About() {
     }
   }
 
+  const openRecipePage = () => {
+    window.open("http://localhost:5173/Portfolio/#/recipes", "_blank");
+  }
+
   return (
     <>
       <div className="Cover-image-container">
@@ -48,7 +52,7 @@ function About() {
           alt="Cover photo of a valley in Costa Rica"
         />
       </div>
-      <h1>Wasson Shag*</h1>
+      <h1>Wasson Shag</h1>
       <section className="container">
         <div className="Profile-intro">
           <img className="Profile-intro__image" src={profileImageTrek} />
@@ -85,7 +89,7 @@ function About() {
         sectionColor={"light"}
         heading={<>Photography</>}
         headingAlignment="Left"
-        text={<>During my travels I also found a of a love for (amateur) photography although I'm never sure what to do with all of them.</>}
+        text={<>During my travels I also found a of a love for (amateur) photography although I'm never sure what to do with all the pictures.</>}
         onClick={showOrHidePhotoGallery}
         buttonText={<>See some of my favourites</>}
       />
@@ -95,7 +99,7 @@ function About() {
         heading={<>Cooking</>}
         headingAlignment="Right"
         text={<>I'm always up for trying new recipes, although maybe just once depending on how complicated the recipe is. As a Cornishman you can't beat a good pasty or barbecue by the beach.</>}
-        onClick={showOrHideTimeline}
+        onClick={openRecipePage}
         buttonText={<>Check out some recipes</>}
       />
     </>
