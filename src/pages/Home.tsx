@@ -5,9 +5,11 @@ import ProjectGallery from "../components/projects/ProjectGallery";
 
 function Home () {
   return (
-    <div className="homepage-wrapper">
+    <div className="Homepage-wrapper">
       <HomepageLogo />
-      <ProjectGallery />
+      <div className="Content-section-wrapper">
+        <ProjectGallery />
+      </div>
     </div>
   )
 };

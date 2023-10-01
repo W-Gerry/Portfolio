@@ -1,8 +1,14 @@
 @use "../styles/variables" as *;
 @use "../styles/mixins" as *;
 
-.homepage-wrapper {
+.Homepage-wrapper {
+  position: relative;
   width: 80%;
-  height: 100vh;
+  height: 100%;
   margin: auto;
+}
+
+.Content-section-wrapper {
+  position: absolute;
+  top: 96rem;
 }

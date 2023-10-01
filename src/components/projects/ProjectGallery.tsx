@@ -13,7 +13,7 @@ function ProjectGallery () {
   }
 
   return (
-    <div className="Project-gallery-wrapper">
+    <>
       <h1>This be the projects page</h1>
       <div className="Project-gallery">
         {projects.map((project) => 
@@ -31,7 +31,7 @@ function ProjectGallery () {
           </div>
         )}      
       </div>
-    </div>
+    </>
   )
 };
 

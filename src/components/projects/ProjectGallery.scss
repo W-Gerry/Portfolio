@@ -2,13 +2,6 @@
 @use "../../styles/variables" as *;
 @use "../../styles/typography" as *;
 
-.Project-gallery-wrapper {
-  position: absolute;
-  top: 4rem;
-
-  width: 75%
-}
-
 .Project-gallery {
   display: grid;
   grid-template-columns: repeat(3,1fr);
