@@ -6,7 +6,6 @@ import caretDown from "../../assets/navigation/caret_down.svg"
 import { useState } from "react";
 
 function ProjectGallery () {
-  const [activeArrow, setActiveArrow] = useState()
   const [showProjectDetails, setShowProjectDetails] = useState(false);
 
   const displayProjectDetails = () => {
