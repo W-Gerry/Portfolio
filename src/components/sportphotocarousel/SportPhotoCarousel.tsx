@@ -1,6 +1,8 @@
 import "./SportPhotoCarousel.scss";
 
 import sportsImages from "../../data/sportsImages";
+import chevronLeft from "../../assets/navigation/chevron_left.svg"
+import chevronRight from "../../assets/navigation/chevron_right.svg"
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -79,10 +81,11 @@ const SportPhotoCarousel = ({ isVisible }: SportPhotoCarouselProps) => {
   };
 
   return (
-    <div className={`carousel ${isVisible && `carousel-visible`}`}>
-        <div className="carousel-images">
+    <div className={`Carousel ${isVisible && `Carousel-visible`}`}>
+        <div className="Carousel-images">
         <AnimatePresence>
           <motion.img
+            className="Carousel-images__image"
             key={currentIndex}
             src={sportsImages[currentIndex]}
             initial={direction === "right" ? "hiddenRight" : "hiddenLeft"}
@@ -91,22 +94,18 @@ const SportPhotoCarousel = ({ isVisible }: SportPhotoCarouselProps) => {
             variants={slideVariants}
           />
         </AnimatePresence>
-        <div className="slide_direction">
+        <div className="Slide_direction">
           <motion.div
             variants={slidersVariants}
             whileHover="hover"
             className="left"
             onClick={handlePrevious}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="20"
-              viewBox="0 96 960 960"
-              width="20"
-              fill="#dcdcdc"
-            >
-              <path d="M400 976 0 576l400-400 56 57-343 343 343 343-56 57Z" />
-            </svg>
+            <img
+              className="Slide_direction__left" 
+              src={chevronLeft} 
+              alt="Select previous image"
+              />
           </motion.div>
           <motion.div
             variants={slidersVariants}
@@ -114,23 +113,15 @@ const SportPhotoCarousel = ({ isVisible }: SportPhotoCarouselProps) => {
             className="right"
             onClick={handleNext}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="20"
-              viewBox="0 96 960 960"
-              width="20"
-              fill="#dcdcdc"
-            >
-              <path d="m304 974-56-57 343-343-343-343 56-57 400 400-400 400Z" />
-            </svg>
+            <img src={chevronRight} alt="Select next image" />
           </motion.div>
         </div>
       </div>
-      <div className="carousel-indicator">
+      <div className="Carousel-indicator">
         {sportsImages.map((_, index) => (
           <motion.div
             key={index}
-            className={`dot ${currentIndex === index ? "active" : ""}`}
+            className={`Dot ${currentIndex === index ? "active" : ""}`}
             onClick={() => handleDotClick(index)}
             initial="initial"
             animate={currentIndex === index ? "animate" : ""}

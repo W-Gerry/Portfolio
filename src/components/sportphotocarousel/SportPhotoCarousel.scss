@@ -3,7 +3,7 @@
 @use "../../styles/sections" as *;
 @use "../../styles/typography" as *;
 
-.carousel {
+.Carousel {
   display: none;
 
   margin-top: 3.5rem;
@@ -16,7 +16,7 @@
   transition: display 0.5s, visibility 0s 0.5s, opacity 0.5s;
 }
 
-.carousel-visible {
+.Carousel-visible {
   display: block;
 
   visibility: visible;
@@ -26,25 +26,31 @@
   transition: opacity 0.5s;
 }
 
-.carousel-images {
+.Carousel-images {
   position: relative;
   border-radius: 10px;
   height: 400px;
   max-width: 650px;
   margin: auto;
   overflow: hidden;
+
+  &__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: $color-primary solid 2px;
+  }
 }
 
-.carousel-images img {
-  width: 99%;
-  height: 99%;
-  border-radius: 8px;
-  border: $color-primary solid 2px;
-}
-
-.slide_direction {
+.Slide_direction {
   display: flex;
   justify-content: space-between;
+
+  &__left {
+    top: 50%;
+    ;
+  }
 }
 
 .left,
@@ -60,6 +66,8 @@
   margin: auto 10px;
   height: 35px;
   width: 35px;
+
+  display: flex;
 }
 
 .left {
@@ -70,14 +78,14 @@
   right: 0;
 }
 
-.carousel-indicator {
+.Carousel-indicator {
   margin-top: 20px;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
-.dot {
+.Dot {
   background-color: #dcdcdc;
   border: 1px solid #dcdcdc;
   width: 15px;
