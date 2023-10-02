@@ -4,52 +4,79 @@
 @use "../../styles/typography" as *;
 
 .Thumbnail-gallery-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @include devices(tablet) {
     width: 75%;
+  }
+
+  @include devices(desktop) {
+    width: 75%;
+  }
 }
 
 .Thumbnail-gallery-header {
-    text-align: center;
-    margin-top: 1.5rem;
-    color: #dcdcdc;
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #dcdcdc;
 }
 
 .Thumbnail-gallery {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    align-items: center;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
 
-    gap: 20px;
-    width: 100%;
+  gap: 20px;
+  width: 100%;
+
+  @include devices(tablet) {
+    grid-template-columns: auto auto auto;
+  }
+
+  @include devices(desktop) {
+
+  }
 }
 
 .Thumbnail {
+  height: 8rem;
+  width: 10rem;
+  border-radius: 1rem;
+  border: 5px solid $color-primary;
+  cursor: pointer;
+
+  @include devices(tablet) {
     height: 200px;
     width: 300px;
     border-radius: 25px;
-    border: 5px solid $color-primary;
-    cursor: pointer;
+  }
+
+  @include devices(desktop) {
+    height: 200px;
+    width: 300px;
+    border-radius: 25px;
+  }
 }
 
 .-selected {
-    height: 200px;
-    width: 300px;
-    border-radius: 25px;
-    border: 5px solid orange;
+  height: 200px;
+  width: 300px;
+  border-radius: 25px;
+  border: 5px solid orange;
 }
 
 .Thumbnail:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 5px 2px white;
-    transition-duration: 0.25s;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px 2px white;
+  transition-duration: 0.25s;
 }
 
 .Thumbnail-selected:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 5px 2px white;
-    transition-duration: 0.25s;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px 2px white;
+  transition-duration: 0.25s;
 }
-

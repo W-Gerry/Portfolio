@@ -3,15 +3,21 @@
 @use "../../styles/sections" as *;
 @use "../../styles/typography" as *;
 
-.thumbnail-gallery-wrapper {
-    width: 100%;
-}
-
 .image {
-    border-radius: 25px;
-    border: 8px solid $color-primary;
-    position: relative;
+  border-radius: 1rem;
+  border: 8px solid $color-primary;
+  position: relative;
 
+  height: 16rem;
+  max-width: 24rem;
+
+  @include devices(tablet) {
     height: 25rem;
     max-width: 40rem;
+  }
+
+  @include devices(desktop) {
+    height: 25rem;
+    max-width: 40rem;
+  }
 }
