@@ -14,7 +14,7 @@ function ProjectGallery () {
 
   return (
     <>
-      <h1>This be the projects page</h1>
+      <h1 className="Project-gallery-header">Projects</h1>
       <div className="Project-gallery">
         {projects.map((project) => 
           <div className="Project-gallery__item">

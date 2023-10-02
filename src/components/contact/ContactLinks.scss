@@ -1,0 +1,51 @@
+@use "../../styles/mixins" as *;
+
+.Contact-links-wrapper {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 2rem;
+
+  width: 100%;
+
+  @include devices(tablet) {
+    justify-content: space-between;
+
+    margin-top: 2rem;
+
+    width: 100%;
+  }
+
+  @include devices(desktop) {
+    justify-content: space-between;
+
+    margin-top: 2rem;
+
+    width: 100%;
+  }
+}
+
+.Contact-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  cursor: pointer;
+
+  &__image {
+    height: 3rem;
+    border-radius: 1rem;
+  }
+
+  &__text {
+    display: none;
+
+    @include devices(tablet) {
+      display: inline-block;
+    }
+  
+    @include devices(desktop) {
+      
+    }
+  }
+}

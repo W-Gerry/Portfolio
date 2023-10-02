@@ -9,6 +9,7 @@ import { useState } from "react";
 
 import "./About.scss";
 import SportPhotoCarousel from "../components/sportphotocarousel/SportPhotoCarousel";
+import ContactLinks from "../components/contact/ContactLinks";
 
 function About() {
   const [timelineVisibility, setTimelineVisibility] = useState(false);
@@ -60,6 +61,7 @@ function About() {
             <p className="Profile-intro__content__text">
               {aboutPara}
             </p>
+            <ContactLinks />
           </div>
         </div>
       </section>
