@@ -50,17 +50,18 @@ h1 {
   }
 
   &__image {
-    max-height: 16rem;
+    height: 16rem;
     border-radius: 1rem;
 
     @include devices(tablet) {
-      max-height: 24rem;
+      height: 20rem;
       width: 30%;
     }
   
     @include devices(desktop) {
-      max-height: 25rem;
-      width: 30%;
+      max-height: unset;
+      height: 24rem;
+      width: 40%;
     }
   }
 

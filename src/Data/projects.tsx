@@ -1,6 +1,8 @@
 import Project from "../models/Project";
 
-import marsImg from "../assets/mars-mission/mars-cover-img.png"
+import marsImg from "../assets/mars-mission/mars-cover-img.png";
+import photoviewerImg from "../assets/projects/Photoviewer_cover.png";
+import busboardImg from "../assets/projects/Busboard_cover.png";
 
 
 const projects: Project[] = [
@@ -13,12 +15,12 @@ const projects: Project[] = [
     {
         name: "Bus Board",
         description: "Description of Bus Board project.",
-        imageUrl: marsImg
+        imageUrl: busboardImg,
     },
     {
         name: "Photo Viewer",
         description: "Description of Photo Viewer project.",
-        imageUrl: marsImg
+        imageUrl: photoviewerImg,
     },
 ]
 

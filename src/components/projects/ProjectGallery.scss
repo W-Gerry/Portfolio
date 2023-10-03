@@ -29,7 +29,7 @@
   }
 
   &__image {
-    height: 12rem;
+    height: 14rem;
     width: 100%;
 
     @include devices(tablet) {
@@ -37,7 +37,8 @@
     }
   
     @include devices(desktop) {
-      height: 18rem;  
+      height: 18rem;
+      object-fit: fill;  
     }
   }
 
