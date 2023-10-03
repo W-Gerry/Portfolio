@@ -20,18 +20,49 @@
   &__logo {
     position: fixed;
     top: 15%;
-    left: 25%;
 
     width: 50%;
-    height: 60%;
+    height: 50%;
+
+    @include devices(tablet) {
+      position: fixed;
+      top: 15%;
+      left: 25%;
+
+      width: 50%;
+      height: 60%;
+    }
+  
+    @include devices(desktop) {
+      position: fixed;
+      top: 15%;
+      left: 25%;
+
+      width: 50%;
+      height: 60%;
+    }
   }
 
   &__down-arrow {
     position: fixed;
-    bottom: 5%;
+    top: 70%;
 
     height: 5rem;
     width: auto;
+
+    @include devices(tablet) {
+      top: unset;
+      bottom: 5%;
+    }
+  
+    @include devices(desktop) {
+      position: fixed;
+      top: unset;
+      bottom: 5%;
+
+      height: 5rem;
+      width: auto;
+    }
   }
 }
 

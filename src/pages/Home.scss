@@ -3,12 +3,25 @@
 
 .Homepage-wrapper {
   position: relative;
-  width: 80%;
+  width: 95%;
   height: 100%;
   margin: auto;
+
+  @include devices(desktop) {
+    width: 80%;
+  }
 }
 
 .Content-section-wrapper {
   position: absolute;
-  top: 96rem;
+  top: 52rem;
+  width: 100%;
+
+  @include devices(tablet) {
+    top: 68rem;
+  }
+
+  @include devices(desktop) {
+    top: 96rem;
+  }
 }

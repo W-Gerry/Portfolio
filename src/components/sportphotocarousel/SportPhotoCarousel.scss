@@ -14,6 +14,16 @@
 
   transition-timing-function: ease-in;
   transition: display 0.5s, visibility 0s 0.5s, opacity 0.5s;
+
+  padding: 0 0.75rem;
+
+  @include devices(tablet) {
+    padding: 0 1rem;
+  }
+
+  @include devices(desktop) {
+    width: unset;
+  }
 }
 
 .Carousel-visible {
@@ -34,6 +44,14 @@
   margin: auto;
   overflow: hidden;
 
+  @include devices(tablet) {
+    width: 36rem;
+  }
+
+  @include devices(desktop) {
+    width: unset;
+  }
+
   &__image {
     object-fit: cover;
     width: 100%;
@@ -49,7 +67,6 @@
 
   &__left {
     top: 50%;
-    ;
   }
 }
 
@@ -82,7 +99,15 @@
   margin-top: 20px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 0.75rem;
+
+  @include devices(tablet) {
+    gap: 1.5rem;
+  }
+
+  @include devices(desktop) {
+    
+  }
 }
 
 .Dot {

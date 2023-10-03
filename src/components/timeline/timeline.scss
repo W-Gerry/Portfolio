@@ -13,6 +13,10 @@
   width: 75rem;
   margin: auto;
 
+  @include devices(tablet) {
+    
+  }
+
   @include devices(desktop) {
     display: none;
     visibility: hidden;
@@ -57,11 +61,21 @@
   }
 }
 
+.vertical-timeline {
+  @include devices(tablet) {
+    width: 65%;
+  }
+
+  @include devices(desktop) {
+    width: unset;
+  }  
+}
+
 .vertical-timeline-element--work {
   width: 20rem;
 
   @include devices(tablet) {
-    width: 40rem;
+    width: 24rem;
   }
 
   @include devices(desktop) {

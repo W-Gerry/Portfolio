@@ -38,6 +38,14 @@
   @include devices(tablet) {
     justify-content: space-between;
 
+    width: 50%;
+
+    margin: auto;
+  }
+
+  @include devices(desktop) {
+    justify-content: space-between;
+
     width: 25%;
 
     margin: auto;

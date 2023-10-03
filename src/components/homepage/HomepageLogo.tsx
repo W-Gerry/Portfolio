@@ -9,8 +9,19 @@ import { NewtonsCradle } from '@uiball/loaders'
 
 const HomepageLogo = () => {
   const [visible, setVisible] = useState(true)
+  const windowWidth = window.innerWidth;
+
   const setLogoVisibility = () => {
-    if (scrollY > 50) {
+    var scrollDistance = 50;
+    if (windowWidth < 600) {
+      scrollDistance = 10;
+    }
+
+    if (windowWidth >= 600 && windowWidth < 992) {
+      scrollDistance = 25;
+    }
+
+    if (scrollY > scrollDistance) {
       setVisible(false);
     } else {
       setVisible(true);
