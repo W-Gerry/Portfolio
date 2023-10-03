@@ -1,16 +1,15 @@
 import "./ProjectGallery.scss"
 
 import projects from "../../data/projects";
-import caretDown from "../../assets/navigation/caret_down.svg"
+import ProjectDetailsButton from "./ProjectDetailsButton";
 
 import { useState } from "react";
+import ProjectDetailsCard from "./ProjectDetailsCard";
+import Project from "../../models/Project";
 
 function ProjectGallery () {
-  const [showProjectDetails, setShowProjectDetails] = useState(false);
-
-  const displayProjectDetails = () => {
-    setShowProjectDetails(!showProjectDetails);
-  }
+  const [selectedProject, setSelectedProject] = useState<Project | undefined>(undefined);
+  const [SelectedProjectVisible, setSelectedProjectVisible] = useState(false);
 
   return (
     <>
@@ -23,13 +22,15 @@ function ProjectGallery () {
               <h2 className="Project-gallery__text__title">{project.name}</h2>
               <p className="Project-gallery__text__description">{project.description}</p>
             </div>
-            <img 
-              className={`Project-gallery__arrow ${showProjectDetails && `Project-gallery__arrow--active`}`}
-              src={caretDown}
-              onClick={() => displayProjectDetails()}
+            <ProjectDetailsButton 
+              project = {project}
+              isVisible = {SelectedProjectVisible}  
+              setSelectedProject={() => setSelectedProject}
+              setSelectedProjectVisible={() => setSelectedProjectVisible}
             />
           </div>
-        )}      
+        )}
+        <ProjectDetailsCard project = {selectedProject} isVisible = {SelectedProjectVisible}/>     
       </div>
     </>
   )

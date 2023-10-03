@@ -1,0 +1,15 @@
+.Project-gallery__arrow {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 2rem);
+  height: 4rem;
+  width:4rem;
+
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+}
+
+.Project-gallery__arrow--active {
+  transform: rotate(-90deg);
+  transition: 0.5s ease-in-out;
+}
