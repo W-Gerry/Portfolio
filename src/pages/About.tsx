@@ -17,11 +17,12 @@ function About() {
   const [photoGalleryVisibility, setPhotoGalleryVisibility] = useState(false);
 
   const showOrHideTimeline = () => {
-    if (timelineVisibility) {
-      setTimelineVisibility(false)
-    } else {
-      setTimelineVisibility(true)
-    }
+    setTimelineVisibility(!timelineVisibility)
+    // if (timelineVisibility) {
+    //   setTimelineVisibility(false)
+    // } else {
+    //   setTimelineVisibility(true)
+    // }
   }
 
   const showOrHideSportCarousel = () => {
