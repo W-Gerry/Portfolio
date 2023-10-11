@@ -1,7 +1,8 @@
 interface Project {
   name: string;
-  description: string;
-  imageUrl: string;
+  descriptionShort: string;
+  descriptionLong: string;
+  imageUrls: string[];
   link?: string
 }
 

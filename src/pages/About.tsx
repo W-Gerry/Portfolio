@@ -41,9 +41,9 @@ function About() {
     }
   }
 
-  const openRecipePage = () => {
-    window.open("http://localhost:5173/Portfolio/#/recipes", "_blank");
-  }
+  // const openRecipePage = () => {
+  //   window.open("http://localhost:5173/Portfolio/#/recipes", "_blank");
+  // }
 
   return (
     <>
@@ -97,14 +97,14 @@ function About() {
         buttonText={<>See some of my favourites</>}
       />
       <PhotographyGallery isVisible={photoGalleryVisibility} />
-      <AboutSection
+      {/* <AboutSection
         sectionColor={"lightest"}
         heading={<>Cooking</>}
         headingAlignment="Right"
         text={<>I'm always up for trying new recipes, although maybe just once depending on how complicated the recipe is. As a Cornishman you can't beat a good pasty or barbecue by the beach.</>}
         onClick={openRecipePage}
         buttonText={<>Check out some recipes</>}
-      />
+      /> */}
     </>
   )
 };
