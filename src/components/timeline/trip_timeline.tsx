@@ -1,17 +1,19 @@
-import trips from "../../data/trips";
-import { toShortWrittenDate } from "../../util/DateConversion";
-
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-
 import "react-vertical-timeline-component/style.min.css";
 import "./timeline.scss"
 
+import trips from "../../data/trips";
+import { toShortWrittenDate } from "../../util/DateConversion";
+import Trip from "../../models/Trip";
+
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 
 interface TimelineProps {
   isVisible: boolean;
+  openModalAction: (trip : Trip) => void;
 }
 
-const Timeline = ({ isVisible } : TimelineProps) => {
+const Timeline = ({ isVisible, openModalAction } : TimelineProps) => {
+
   return (
     <div className={`Timeline-wrapper ${isVisible && `Timeline-visible`}`}>
       <VerticalTimeline>
@@ -20,7 +22,7 @@ const Timeline = ({ isVisible } : TimelineProps) => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: 'rgb(8,31,27)', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(0, 0, 0)' }}
-          date={`${toShortWrittenDate(trip.startDate)} - ${toShortWrittenDate(trip.endDate)}`}
+          date={`${toShortWrittenDate(trip.startDate)} - ${toShortWrittenDate(trip.endDate)} ${trip.year}`}
           iconStyle={{ 
             background: 'rgb(16,61,54)', 
             color: '#fff',
@@ -37,7 +39,7 @@ const Timeline = ({ isVisible } : TimelineProps) => {
               className="Timeline-logo"
             />
           }
-          // iconOnClick={ Function }
+          iconOnClick={ () => openModalAction(trip) }
           >
             <h3 className="vertical-timeline-element-title">{trip.country}</h3>
             <h4 className="vertical-timeline-element-subtitle">{trip.title}</h4>
@@ -47,7 +49,7 @@ const Timeline = ({ isVisible } : TimelineProps) => {
           </VerticalTimelineElement>
         )}
       </VerticalTimeline>
-    </div>
+    </div>    
   )
 }
 

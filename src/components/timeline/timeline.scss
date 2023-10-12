@@ -53,6 +53,8 @@
   width: 60px;
   border-radius: 19px;
 
+  cursor: pointer;
+
   @include devices(desktop) {
     object-fit: contain;
     height: 60px;
@@ -81,4 +83,8 @@
   @include devices(desktop) {
     width: unset;
   }
+}
+
+.vertical-timeline-element-content {
+  cursor: pointer;
 }

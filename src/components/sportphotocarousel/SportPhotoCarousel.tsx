@@ -1,8 +1,8 @@
 import "./SportPhotoCarousel.scss";
 
 import sportsImages from "../../data/sportsImages";
-import chevronLeft from "../../assets/navigation/chevron_left.svg"
-import chevronRight from "../../assets/navigation/chevron_right.svg"
+import chevronLeft from "/images/navigation/chevron_left.svg"
+import chevronRight from "/images/navigation/chevron_right.svg"
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";

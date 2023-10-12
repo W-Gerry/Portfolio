@@ -1,7 +1,5 @@
 import "./ContactLinks.scss";
 
-import emailIcon from "../../assets/contact/email.svg"
-
 const ContactLinks = () => {
   const openLinkedIn = () => {
     window.open("https://www.linkedin.com/in/williamgerry/", "_blank");
@@ -21,7 +19,7 @@ const ContactLinks = () => {
         <div className="Contact-links">
           <img
             className="Contact-links__image"
-            src={emailIcon}
+            src="/images/contact/email.svg"
             alt="Email Logo"
           />
           <p className="Contact-links__text">- william.gerry@outlook.com</p>  

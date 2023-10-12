@@ -1,63 +1,36 @@
-import profileImageTrek from "../assets/profile/profile_image_trek.jpg";
-import coverImage from "../assets/profile/cover_photo.jpg";
+import "./About.scss";
+
 import TravelTimeline from "../components/timeline/trip_timeline";
 import PhotographyGallery from "../components/photographygallery/PhotographyGallery";
 import AboutSection from "../components/aboutsection/AboutSection";
 import aboutPara from "../data/aboutpara";
-
-import { useState } from "react";
-
-import "./About.scss";
 import SportPhotoCarousel from "../components/sportphotocarousel/SportPhotoCarousel";
 import ContactLinks from "../components/contact/ContactLinks";
+import Modal from "../components/modal/Modal"
+import Trip from "../models/Trip";
+import TripModal from "../components/modal/TripModal";
+
+import { useState } from "react";
 
 function About() {
   const [timelineVisibility, setTimelineVisibility] = useState(false);
   const [sportCarouselVisibility, setSportCarouselVisibility] = useState(false);
   const [photoGalleryVisibility, setPhotoGalleryVisibility] = useState(false);
-
-  const showOrHideTimeline = () => {
-    setTimelineVisibility(!timelineVisibility)
-    // if (timelineVisibility) {
-    //   setTimelineVisibility(false)
-    // } else {
-    //   setTimelineVisibility(true)
-    // }
-  }
-
-  const showOrHideSportCarousel = () => {
-  if (sportCarouselVisibility) {
-    setSportCarouselVisibility(false)
-  } else {
-    setSportCarouselVisibility(true)
-  }
-  }
-
-  const showOrHidePhotoGallery = () => {
-    if (photoGalleryVisibility) {
-      setPhotoGalleryVisibility(false)
-    } else {
-      setPhotoGalleryVisibility(true)
-    }
-  }
-
-  // const openRecipePage = () => {
-  //   window.open("http://localhost:5173/Portfolio/#/recipes", "_blank");
-  // }
+  const [selectedTripDetails, setSelectedTripDetails] = useState<Trip>();
 
   return (
     <>
       <div className="Cover-image-container">
         <img 
           className="Cover-image-container__image"
-          src={coverImage}
+          src="/images/profile/cover_photo.jpg"
           alt="Cover photo of a valley in Costa Rica"
         />
       </div>
-      <h1>Wasson Shag</h1>
+      <h1>Wasson Shag*</h1>
       <section className="container">
         <div className="Profile-intro">
-          <img className="Profile-intro__image" src={profileImageTrek} />
+          <img className="Profile-intro__image" src="/images/profile/profile_image_trek.jpg" />
           <div className="Profile-intro__content">
             <p className="Profile-intro__content__text">
               {aboutPara}
@@ -71,10 +44,10 @@ function About() {
         heading={<>Travel</>}
         headingAlignment="Left"
         text={<>Although I do love playing with computers, I also love exploring the world and travelling to new places. I have been incredibly lucky to visit some beautiful countries and hoping to see a few more!</>}
-        onClick={showOrHideTimeline}
+        onClick={() => setTimelineVisibility(!timelineVisibility)}
         buttonText={<>See some of my travels</>}
       />
-      <TravelTimeline isVisible={timelineVisibility} />
+      <TravelTimeline isVisible={timelineVisibility} openModalAction={setSelectedTripDetails} />
       <AboutSection
         sectionColor={"medium"}
         heading={<>Sports</>}
@@ -84,7 +57,7 @@ function About() {
           <br/>
           I also played American Football at university and every so often I chase a golfball around the fairway (or rough), still chasing that hole in one though.</>
         }
-        onClick={showOrHideSportCarousel}
+        onClick={() => setSportCarouselVisibility(!sportCarouselVisibility)}
         buttonText={<>See more</>}
       />
       <SportPhotoCarousel isVisible={sportCarouselVisibility} />
@@ -93,7 +66,7 @@ function About() {
         heading={<>Photography</>}
         headingAlignment="Left"
         text={<>During my travels I also found a of a love for (amateur) photography although I'm never sure what to do with all the pictures.</>}
-        onClick={showOrHidePhotoGallery}
+        onClick={() => setPhotoGalleryVisibility(!photoGalleryVisibility)}
         buttonText={<>See some of my favourites</>}
       />
       <PhotographyGallery isVisible={photoGalleryVisibility} />
@@ -102,9 +75,16 @@ function About() {
         heading={<>Cooking</>}
         headingAlignment="Right"
         text={<>I'm always up for trying new recipes, although maybe just once depending on how complicated the recipe is. As a Cornishman you can't beat a good pasty or barbecue by the beach.</>}
-        onClick={openRecipePage}
+        onClick={() => window.open("http://localhost:5173/Portfolio/#/recipes", "_blank")}
         buttonText={<>Check out some recipes</>}
       /> */}
+      {selectedTripDetails && (
+        <Modal closeAction={() => setSelectedTripDetails(undefined)}>
+          <TripModal
+            tripData={selectedTripDetails}
+          />
+        </Modal>
+      )}
     </>
   )
 };
