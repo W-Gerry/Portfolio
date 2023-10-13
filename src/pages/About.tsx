@@ -3,12 +3,13 @@ import "./About.scss";
 import TravelTimeline from "../components/timeline/trip_timeline";
 import PhotographyGallery from "../components/photographygallery/PhotographyGallery";
 import AboutSection from "../components/aboutsection/AboutSection";
-import aboutPara from "../data/aboutpara";
+import aboutPara from "../Data/aboutpara";
 import SportPhotoCarousel from "../components/sportphotocarousel/SportPhotoCarousel";
 import ContactLinks from "../components/contact/ContactLinks";
 import Modal from "../components/modal/Modal"
 import Trip from "../models/Trip";
 import TripModal from "../components/modal/TripModal";
+import trekImage from "/images/profile/profile_image_trek.jpg"
 
 import { useState } from "react";
 
@@ -30,7 +31,7 @@ function About() {
       <h1>Wasson Shag*</h1>
       <section className="container">
         <div className="Profile-intro">
-          <img className="Profile-intro__image" src="/images/profile/profile_image_trek.jpg" />
+          <img className="Profile-intro__image" src={trekImage} alt="Trek"/>
           <div className="Profile-intro__content">
             <p className="Profile-intro__content__text">
               {aboutPara}
