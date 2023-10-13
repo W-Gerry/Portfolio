@@ -1,6 +1,6 @@
 import "./ProjectGallery.scss"
 
-import projects from "../../data/projects";
+import projects from "../../Data/projects";
 import { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectCardExpanded from "./ProjectCardExpanded";

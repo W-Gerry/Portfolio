@@ -1,8 +1,6 @@
 import "./TripModal.scss";
-
 import Trip from "../../models/Trip";
-import fullscreenIcon from "../../assets/modal/fullscreen_icon.svg";
-
+import fullscreenIcon from "/images/modal/fullscreen_icon.svg";
 import { useState } from "react";
 
 interface TripDataProps {

@@ -1,6 +1,6 @@
 import "./PhotographyGallery.scss"
 
-import photoImages from "../../data/photographyGalleryImages";
+import photoImages from "../../Data/photographyGalleryImages";
 import { PhotoViewer } from "./PhotoViewer";
 import { GalleryViewer } from "./GalleryViewer";
 

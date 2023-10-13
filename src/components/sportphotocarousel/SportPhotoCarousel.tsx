@@ -1,6 +1,6 @@
 import "./SportPhotoCarousel.scss";
 
-import sportsImages from "../../data/sportsImages";
+import sportsImages from "../../Data/sportsImages";
 import chevronLeft from "/images/navigation/chevron_left.svg"
 import chevronRight from "/images/navigation/chevron_right.svg"
 
