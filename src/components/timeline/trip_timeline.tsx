@@ -1,5 +1,5 @@
 import "react-vertical-timeline-component/style.min.css";
-import "./timeline.scss"
+import "./trip_timeline.scss"
 
 import trips from "../../data/trips";
 import { toShortWrittenDate } from "../../util/DateConversion";
@@ -39,10 +39,11 @@ const Timeline = ({ isVisible, openModalAction } : TimelineProps) => {
               className="Timeline-logo"
             />
           }
-          iconOnClick={ () => openModalAction(trip) }
           >
-            <h3 className="vertical-timeline-element-title">{trip.country}</h3>
-            <h4 className="vertical-timeline-element-subtitle">{trip.title}</h4>
+            <div className="Open-modal-container" onClick={() => openModalAction(trip)}>
+              <h3 className="vertical-timeline-element-title">{trip.country}</h3>
+              <h4 className="vertical-timeline-element-subtitle">{trip.title}</h4>
+            </div>
             <p>
               {trip.description}
             </p>

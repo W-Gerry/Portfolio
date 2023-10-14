@@ -1,7 +1,7 @@
 import "./TripModal.scss";
 
 import Trip from "../../models/Trip";
-import fullscreenIcon from "../../assets/modal/fullscreen_icon.svg";
+import fullscreenIcon from "/images/modal/fullscreen_icon.svg";
 
 import { useState } from "react";
 
@@ -9,7 +9,7 @@ interface TripDataProps {
   tripData: Trip;
 }
 
-const ProjectModal = ({ tripData }: TripDataProps) => {
+const TripModal = ({ tripData }: TripDataProps) => {
   const [imageIndex, setImageIndex] = useState(0);
 
   const showPreviousImage = () => {
@@ -22,40 +22,38 @@ const ProjectModal = ({ tripData }: TripDataProps) => {
 
   return (
     <>
-      <div className="ProjectModal">
-        <div className="ProjectModal__image__container">
+      <div className="TripModal">
+        <div className="TripModal__image__container">
+          <img 
+            className="TripModal__arrows--left"
+            onClick={showPreviousImage}
+          />
           <img
-            className="ProjectModal__image"
+            className="TripModal__image"
             src={tripData.images[imageIndex]}
             alt={`image ${imageIndex + 1} from trip to ${tripData.country}`}
           />
-          <div className="ProjectModal__arrows">
-            <img 
-              className="ProjectModal__arrows--left"
-              onClick={showPreviousImage}
-            />
-            <img 
-              className="ProjectModal__arrows--right"
-              onClick={showNextImage}
-            />
-          </div>
+          <img 
+            className="TripModal__arrows--right"
+            onClick={showNextImage}
+          />
           <a href={tripData.images[imageIndex]} target="_blank">
             <img
-              className="ProjectModal__fullscreen"
+              className="TripModal__fullscreen"
               src={fullscreenIcon}
               alt="Show image fullscreen"
             />
           </a>
         </div>
-        <div className="ProjectModal__content">
-          <h3 className="ProjectModal__heading__title">
+        <div className="TripModal__content">
+          <h3 className="TripModal__heading__title">
             Placeholder
           </h3>
-          <p className="ProjectModal__description">placeholder</p>
+          <p className="TripModal__description">placeholder</p>
         </div>
       </div>
     </>
   );
 };
 
-export default ProjectModal;
+export default TripModal;

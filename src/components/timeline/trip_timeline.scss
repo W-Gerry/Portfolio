@@ -53,8 +53,6 @@
   width: 60px;
   border-radius: 19px;
 
-  cursor: pointer;
-
   @include devices(desktop) {
     object-fit: contain;
     height: 60px;
@@ -85,6 +83,6 @@
   }
 }
 
-.vertical-timeline-element-content {
+.Open-modal-container {
   cursor: pointer;
 }

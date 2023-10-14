@@ -1,6 +1,6 @@
 import "./Modal.scss";
 
-import closeIcon from "../../assets/modal/close_icon.png";
+import closeIcon from "/images/modal/close_icon.svg";
 
 import { ReactNode } from "react";
 

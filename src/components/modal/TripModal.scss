@@ -1,0 +1,11 @@
+@use "../../styles/variables" as *;
+
+.Trip-modal {
+  display: flex;
+  flex-direction: column;
+
+  height: 80%;
+  width: 60%;
+
+  background-color: $color-primary;
+}
