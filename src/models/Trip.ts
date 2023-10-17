@@ -6,7 +6,7 @@ interface Trip {
   endDate: string;
   description: string;
   iconImage: string;
-  images: [];
+  images: string[];
 }
 
 export default Trip

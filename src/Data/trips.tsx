@@ -22,7 +22,7 @@ const trips: Trip[] = [
     endDate: "2022-05-05 00:00:00",
     description: "A truly amazing experience as a Volunteer Manager working in some beautiful (and incredibly remote) parts of Costa Rica",
     iconImage: `${filepath}costa_rica.svg`,
-    images: [],
+    images: ["/images/mars-mission/mars-cover-img.png",],
   },
   {
     title: "Rab",

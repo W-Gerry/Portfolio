@@ -22,14 +22,15 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 80%;
-  height: 85%;
+  width: 50%;
+  height: 75%;
   background-color: $color-primary;
 
   &__Close {
     position: absolute;
     top: 0;
     right: 0;
+    background: none;
     background-color: $color-primary;
     border-radius: 0.125rem;
     border: none;

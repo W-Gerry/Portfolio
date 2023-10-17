@@ -23,20 +23,26 @@ const TripModal = ({ tripData }: TripDataProps) => {
   return (
     <>
       <div className="TripModal">
-        <div className="TripModal__image__container">
-          <img 
-            className="TripModal__arrows--left"
-            onClick={showPreviousImage}
-          />
+        <div className="TripModal__image-container">
+          <div className="TripModal__arrow-container">
+            <img 
+              className="TripModal__arrows TripModal__arrows--left"
+              src="/images/navigation/chevron_left.svg"
+              onClick={showPreviousImage}
+            />
+          </div>
           <img
             className="TripModal__image"
             src={tripData.images[imageIndex]}
             alt={`image ${imageIndex + 1} from trip to ${tripData.country}`}
           />
-          <img 
-            className="TripModal__arrows--right"
-            onClick={showNextImage}
-          />
+          <div className="TripModal__arrow-container">
+            <img 
+              className="TripModal__arrows TripModal__arrows--right"
+              src="/images/navigation/chevron_right.svg"
+              onClick={showNextImage}
+            />
+          </div>
           <a href={tripData.images[imageIndex]} target="_blank">
             <img
               className="TripModal__fullscreen"

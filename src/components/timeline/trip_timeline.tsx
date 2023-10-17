@@ -1,5 +1,5 @@
 import "react-vertical-timeline-component/style.min.css";
-import "./trip_timeline.scss"
+import "./trip_timeline.scss";
 
 import trips from "../../data/trips";
 import { toShortWrittenDate } from "../../util/DateConversion";
