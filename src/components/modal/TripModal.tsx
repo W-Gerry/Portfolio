@@ -2,6 +2,7 @@ import "./TripModal.scss";
 
 import Trip from "../../models/Trip";
 import fullscreenIcon from "/images/modal/fullscreen_icon.svg";
+import { ArrowRight, ArrowLeft } from "../navigationarrows/NavigationArrows";
 
 import { useState } from "react";
 
@@ -24,26 +25,18 @@ const TripModal = ({ tripData }: TripDataProps) => {
     <>
       <div className="TripModal">
         <div className="TripModal__image-container">
-          <div className="TripModal__arrow-container">
-            <img 
-              className="TripModal__arrows TripModal__arrows--left"
-              src="/images/navigation/chevron_left.svg"
-              onClick={showPreviousImage}
-            />
+        <div className="TripModal__arrows Arrows__left" onClick={showPreviousImage}>
+            <ArrowLeft />
           </div>
           <img
             className="TripModal__image"
-            src={tripData.images[imageIndex]}
+            src={tripData.images[imageIndex].image}
             alt={`image ${imageIndex + 1} from trip to ${tripData.country}`}
           />
-          <div className="TripModal__arrow-container">
-            <img 
-              className="TripModal__arrows TripModal__arrows--right"
-              src="/images/navigation/chevron_right.svg"
-              onClick={showNextImage}
-            />
+          <div className="TripModal__arrows Arrows__right" onClick={showNextImage}>
+            <ArrowRight />
           </div>
-          <a href={tripData.images[imageIndex]} target="_blank">
+          <a href={tripData.images[imageIndex].image} target="_blank">
             <img
               className="TripModal__fullscreen"
               src={fullscreenIcon}
@@ -52,10 +45,12 @@ const TripModal = ({ tripData }: TripDataProps) => {
           </a>
         </div>
         <div className="TripModal__content">
-          <h3 className="TripModal__heading__title">
-            Placeholder
+          <h3 className="TripModal__content__heading">
+            {tripData.images[imageIndex].title}
           </h3>
-          <p className="TripModal__description">placeholder</p>
+          <p className="TripModal__content__text">
+            {tripData.images[imageIndex].text}
+          </p>
         </div>
       </div>
     </>

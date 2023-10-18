@@ -1,6 +1,7 @@
 import Trip from "../models/Trip.ts";
+import { cornwall23Images } from "./tripsimages.tsx";
 
-const filepath = "/images/tripicons/"
+const iconFilepath = "/images/tripicons/"
 
 // Add new trips to top of list
 const trips: Trip[] = [
@@ -11,8 +12,8 @@ const trips: Trip[] = [
     startDate: "2021-08-28 00:00:00",
     endDate: "2021-09-26 00:00:00",
     description: "Quick trip back to the West Country to see family and friends",
-    iconImage: `${filepath}cornwall.svg`,
-    images: [],
+    iconImage: `${iconFilepath}cornwall.svg`,
+    images: cornwall23Images,
   },
   {
     title: "Operation Raleigh",
@@ -21,8 +22,8 @@ const trips: Trip[] = [
     startDate: "2022-01-28 00:00:00",
     endDate: "2022-05-05 00:00:00",
     description: "A truly amazing experience as a Volunteer Manager working in some beautiful (and incredibly remote) parts of Costa Rica",
-    iconImage: `${filepath}costa_rica.svg`,
-    images: ["/images/mars-mission/mars-cover-img.png",],
+    iconImage: `${iconFilepath}costa_rica.svg`,
+    images: cornwall23Images,
   },
   {
     title: "Rab",
@@ -31,8 +32,8 @@ const trips: Trip[] = [
     startDate: "2019-07-14 00:00:00",
     endDate: "2019-07-28 00:00:00",
     description: "Two weeks well-deserved relaxation on the beach",
-    iconImage: `${filepath}croatia.svg`,
-    images: [],
+    iconImage: `${iconFilepath}croatia.svg`,
+    images: cornwall23Images,
   },
   {
     title: "Lausanne",
@@ -41,8 +42,8 @@ const trips: Trip[] = [
     startDate: "2018-01-04 00:00:00",
     endDate: "2018-12-30 00:00:00",
     description: "Lived and worked in Switzerland for a year",
-    iconImage: `${filepath}switzerland.svg`,
-    images: [],
+    iconImage: `${iconFilepath}switzerland.svg`,
+    images: cornwall23Images,
   },
 ]
 

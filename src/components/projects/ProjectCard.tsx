@@ -1,7 +1,6 @@
 import "./ProjectCard.scss"
 
 import Project from "../../models/Project"
-// import ProjectDetailsButton from "./ProjectDetailsButton"
 
 interface ProjectSummaryProps {
 	expanded?: boolean;
