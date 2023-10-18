@@ -1,5 +1,5 @@
 import Trip from "../models/Trip.ts";
-import { cornwall23Images } from "./tripsimages.tsx";
+import { cornwall23Images, costarica22Images } from "./tripsimages.tsx";
 
 const iconFilepath = "/images/tripicons/"
 
@@ -23,7 +23,7 @@ const trips: Trip[] = [
     endDate: "2022-05-05 00:00:00",
     description: "A truly amazing experience as a Volunteer Manager working in some beautiful (and incredibly remote) parts of Costa Rica",
     iconImage: `${iconFilepath}costa_rica.svg`,
-    images: cornwall23Images,
+    images: costarica22Images,
   },
   {
     title: "Rab",

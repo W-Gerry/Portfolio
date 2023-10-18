@@ -5,6 +5,8 @@ import fullscreenIcon from "/images/modal/fullscreen_icon.svg";
 import { ArrowRight, ArrowLeft } from "../navigationarrows/NavigationArrows";
 
 import { useState } from "react";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Waveform } from '@uiball/loaders'
 
 interface TripDataProps {
   tripData: Trip;
@@ -28,11 +30,17 @@ const TripModal = ({ tripData }: TripDataProps) => {
         <div className="TripModal__arrows Arrows__left" onClick={showPreviousImage}>
             <ArrowLeft />
           </div>
-          <img
+          <LazyLoadImage 
+            className="TripModal__image"
+            alt={`image ${imageIndex + 1} from trip to ${tripData.country}`}
+            src={tripData.images[imageIndex].image}
+            placeholder={<Waveform />}
+          />
+          {/* <img
             className="TripModal__image"
             src={tripData.images[imageIndex].image}
             alt={`image ${imageIndex + 1} from trip to ${tripData.country}`}
-          />
+          /> */}
           <div className="TripModal__arrows Arrows__right" onClick={showNextImage}>
             <ArrowRight />
           </div>
