@@ -1,9 +1,9 @@
 import Project from "../models/Project";
 
-import marsImg from "/images/mars-mission/mars-cover-img.png";
-import photoviewerImg from "/images/projects/Photoviewer_cover.png";
-import busboardImg from "/images/projects/Busboard_cover.png";
-import whaleImg from "/images/projects/WhaleSpotting_cover.png";
+import marsImg from "/images/mars-mission/mars-cover-img.webp";
+import photoviewerImg from "/images/projects/Photoviewer_cover.webp";
+import busboardImg from "/images/projects/Busboard_cover.webp";
+import whaleImg from "/images/projects/WhaleSpotting_cover.webp";
 
 
 const projects: Project[] = [
