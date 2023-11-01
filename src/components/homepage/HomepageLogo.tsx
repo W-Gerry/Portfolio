@@ -1,8 +1,8 @@
 import "./HomepageLogo.scss";
 import "../../styles/NCradleLoader.scss";
 
-import logoLarge from "/images/general/Logo.svg"
-import chevronDown from "/images/navigation/chevrons_down.svg"
+import logoLarge from "../../assets/general/Logo.svg"
+import chevronDown from "../../assets/navigation/chevrons_down.svg"
 
 import { useEffect, useState } from "react";
 import { NewtonsCradle } from '@uiball/loaders'

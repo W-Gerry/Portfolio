@@ -30,7 +30,7 @@ function About() {
       <h1>Wasson Shag*</h1>
       <section className="container">
         <div className="Profile-intro">
-          <img className="Profile-intro__image" src="/images/profile/profile_image_trek.jpg" />
+          <img className="Profile-intro__image" src="/images/profile/profile_image_trek.webp" />
           <div className="Profile-intro__content">
             <p className="Profile-intro__content__text">
               {aboutPara}

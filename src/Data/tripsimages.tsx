@@ -1,3 +1,5 @@
+
+
 export const cornwall23Images = [
   {
     image:"/images/trips/cornwall23/image_1.webp",
