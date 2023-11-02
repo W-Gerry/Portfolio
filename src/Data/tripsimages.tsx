@@ -252,5 +252,20 @@ export const costarica22Images = [
   },  
 ];
 
-export const croatia19Images = []
-export const switzerland18Images = []
+
+import noImageIcon from "/images/general/no_image.webp";
+
+export const croatia19Images = [
+  {
+    image: noImageIcon,
+    title: "Croatia",
+    text: "No images available for this trip."
+  }
+]
+export const switzerland18Images = [
+  {
+    image: noImageIcon,
+    title: "Croatia",
+    text: "No images available for this trip."
+  }
+]
