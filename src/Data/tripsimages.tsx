@@ -1,43 +1,58 @@
-
+import image_1_cornwall23 from "/images/trips/cornwall23/image_1.webp"
+import image_2_cornwall23 from "/images/trips/cornwall23/image_2.webp"
+import image_3_cornwall23 from "/images/trips/cornwall23/image_3.webp"
+import image_4_cornwall23 from "/images/trips/cornwall23/image_4.webp"
+import image_5_cornwall23 from "/images/trips/cornwall23/image_5.webp"
+import image_6_cornwall23 from "/images/trips/cornwall23/image_6.webp"
+import image_7_cornwall23 from "/images/trips/cornwall23/image_7.webp"
+import image_8_cornwall23 from "/images/trips/cornwall23/image_8.webp"
 
 export const cornwall23Images = [
   {
-    image:"/images/trips/cornwall23/image_1.webp",
+    // image:"/images/trips/cornwall23/image_1.webp",
+    image: image_1_cornwall23,
     title: "Bude",
     text: "Hello there"
   },
   {
-    image:"/images/trips/cornwall23/image_2.webp",
+    // image:"/images/trips/cornwall23/image_2.webp",
+    image: image_2_cornwall23,
     title: "Bude",
     text: "Hello there"
   },
   {
-    image:"/images/trips/cornwall23/image_3.webp",
+    // image:"/images/trips/cornwall23/image_3.webp",
+    image: image_3_cornwall23,
     title: "Bude",
     text: "Hello there"
   },
   {
-    image:"/images/trips/cornwall23/image_4.webp",
+    // image:"/images/trips/cornwall23/image_4.webp",
+    image: image_4_cornwall23,
     title: "Bude",
     text: "Hello there"
   },
   {
-    image:"/images/trips/cornwall23/image_5.webp",
+    // image:"/images/trips/cornwall23/image_5.webp",
+    image: image_5_cornwall23,
     title: "Bude",
     text: "Hello there"
   },
   {
-    image:"/images/trips/cornwall23/image_6.webp",
+    // image:"/images/trips/cornwall23/image_6.webp",
+    image: image_6_cornwall23,
     title: "Bude",
     text: "Hello there"
   },
   {
-    image:"/images/trips/cornwall23/image_7.webp",
+    // image:"/images/trips/cornwall23/image_7.webp",
+    image: image_7_cornwall23,
     title: "Bude",
     text: "Hello there"
   },
   {
-    image:"/images/trips/cornwall23/image_8.webp",
+    // image:"/images/trips/cornwall23/image_8.webp",
+    image: image_8_cornwall23,
     title: "Bude",
     text: "Hello there"
   },
