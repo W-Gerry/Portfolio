@@ -15,7 +15,7 @@ export const cornwall23Images = [
   },
   {
     image: image_2_cornwall23,
-    title: "Widemout Bay",
+    title: "Widemouth Bay",
     text: "Gorgeous spot for some surfing, can get a bit chilly though."
   },
   {
