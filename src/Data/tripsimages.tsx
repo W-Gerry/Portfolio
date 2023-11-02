@@ -108,7 +108,7 @@ export const costarica22Images = [
   {
     image: image_5_costarica22,
     title: "Comfier than it looks",
-    text: "My sleeping arrangements for the three and a half weeks we sepnt in the school building a new classroom."
+    text: "My sleeping arrangements for the three and a half weeks we spent in the school building a new classroom."
   },
   {
     image: image_6_costarica22,
