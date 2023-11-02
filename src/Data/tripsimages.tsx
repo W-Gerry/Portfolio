@@ -148,7 +148,7 @@ export const costarica22Images = [
   {
     image: image_13_costarica22,
     title: "Off The Beaten Track",
-    text: "One of our many river crossings, gave us a chance to cool off and amybe a little bit of a paddle."
+    text: "One of our many river crossings, gave us a chance to cool off and maybe a little bit of a paddle."
   },
   {
     image: image_14_costarica22,
@@ -228,7 +228,7 @@ export const costarica22Images = [
   {
     image: image_29_costarica22,
     title: "Back To School",
-    text: "One of our days on project was spent working with a local school, preparing learning materials and fun activities to teach younger schoolchildren about their local environmetn and its importance."
+    text: "One of our days on project was spent working with a local school, preparing learning materials and fun activities to teach younger schoolchildren about their local environment and its importance."
   },
   {
     image: image_30_costarica22,
@@ -248,7 +248,7 @@ export const costarica22Images = [
   {
     image: image_33_costarica22,
     title: "More Activities",
-    text: "Even after all the physical activity of the last three months I couldn;t resist a couple of weeks of relaxing, surfing, kayaking and exploring Nicaragua. "
+    text: "Even after all the physical activity of the last three months I couldn't resist a couple of weeks of relaxing, surfing, kayaking and exploring Nicaragua. "
   },  
 ];
 
