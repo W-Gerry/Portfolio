@@ -1,14 +1,16 @@
 import "./About.scss";
 
-import TravelTimeline from "../components/timeline/trip_timeline";
 import PhotographyGallery from "../components/photographygallery/PhotographyGallery";
-import AboutSection from "../components/aboutsection/AboutSection";
-import aboutPara from "../data/aboutpara";
 import SportPhotoCarousel from "../components/sportphotocarousel/SportPhotoCarousel";
+import profileImage from "/images/profile/profile_image_trek.webp";
+import AboutSection from "../components/aboutsection/AboutSection";
+import TravelTimeline from "../components/timeline/trip_timeline";
 import ContactLinks from "../components/contact/ContactLinks";
-import Modal from "../components/modal/Modal"
-import Trip from "../models/Trip";
+import coverImage from "/images/profile/cover_photo.jpg"
 import TripModal from "../components/modal/TripModal";
+import Modal from "../components/modal/Modal";
+import aboutPara from "../data/aboutpara";
+import Trip from "../models/Trip";
 
 import { useState } from "react";
 
@@ -23,14 +25,14 @@ function About() {
       <div className="Cover-image-container">
         <img 
           className="Cover-image-container__image"
-          src="/images/profile/cover_photo.jpg"
+          src={coverImage}
           alt="Cover photo of a valley in Costa Rica"
         />
       </div>
       <h1>Wasson Shag*</h1>
       <section className="container">
         <div className="Profile-intro">
-          <img className="Profile-intro__image" src="/images/profile/profile_image_trek.webp" />
+          <img className="Profile-intro__image" src={profileImage} />
           <div className="Profile-intro__content">
             <p className="Profile-intro__content__text">
               {aboutPara}
