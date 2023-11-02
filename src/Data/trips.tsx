@@ -1,5 +1,5 @@
 import Trip from "../models/Trip.ts";
-import { cornwall23Images, costarica22Images } from "./tripsimages.tsx";
+import { cornwall23Images, costarica22Images, croatia19Images, switzerland18Images } from "./tripsimages.tsx";
 import iconCornwall from "/images/tripicons/cornwall.svg"
 import iconCostaRica from "/images/tripicons/costa_rica.svg"
 import iconCroatia from "/images/tripicons/croatia.svg"
@@ -35,7 +35,7 @@ const trips: Trip[] = [
     endDate: "2019-07-28 00:00:00",
     description: "Two weeks well-deserved relaxation on the beach",
     iconImage: iconCroatia,
-    images: cornwall23Images,
+    images: croatia19Images,
   },
   {
     title: "Lausanne",
@@ -45,7 +45,7 @@ const trips: Trip[] = [
     endDate: "2018-12-30 00:00:00",
     description: "Lived and worked in Switzerland for a year",
     iconImage: iconSwitzerland,
-    images: cornwall23Images,
+    images: switzerland18Images,
   },
 ]
 
