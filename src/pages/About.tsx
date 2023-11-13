@@ -4,7 +4,7 @@ import PhotographyGallery from "../components/photographygallery/PhotographyGall
 import SportPhotoCarousel from "../components/sportphotocarousel/SportPhotoCarousel";
 import profileImage from "/images/profile/profile_image_trek.webp";
 import AboutSection from "../components/aboutsection/AboutSection";
-import TravelTimeline from "../components/timeline/trip_timeline";
+import TripTimeline from "../components/timeline/trip_timeline";
 import ContactLinks from "../components/contact/ContactLinks";
 import coverImage from "/images/profile/cover_photo.jpg"
 import TripModal from "../components/modal/TripModal";
@@ -49,7 +49,7 @@ function About() {
         onClick={() => setTimelineVisibility(!timelineVisibility)}
         buttonText={<>See some of my travels</>}
       />
-      <TravelTimeline isVisible={timelineVisibility} openModalAction={setSelectedTripDetails} />
+      <TripTimeline isVisible={timelineVisibility} openModalAction={setSelectedTripDetails} />
       <AboutSection
         sectionColor={"medium"}
         heading={<>Sports</>}
