@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [visible, setVisible] = useState(true)
+  
   const setNavbarVisibility = () => {
     if (scrollY > 150) {
       setVisible(false);
