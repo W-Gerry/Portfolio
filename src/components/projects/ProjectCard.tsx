@@ -9,15 +9,15 @@ interface ProjectSummaryProps {
 }
 
 const ProjectCard = (props : ProjectSummaryProps) => {
-  const { expanded, setExpandedProject, project } = props;
+  // const { expanded, setExpandedProject, project } = props;
+  const { project } = props;
 
   return (
-    <div className={`Project-gallery__item ${expanded && `Project-gallery__item--active`}`}>
+    <div className={`Project-gallery__item`}>
       <img 
         className="Project-gallery__image" 
         alt={`${project.name} screenshot`} 
-        src={`${project.imageUrls[0]}`}
-        onClick={() => setExpandedProject()} 
+        src={`${project.imageUrls[0]}`} 
       />
       <div className="Project-gallery__text">
         <h2 className="Project-gallery__text__title">{project.name}</h2>

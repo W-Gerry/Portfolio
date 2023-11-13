@@ -1,0 +1,38 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.IntroCard {
+  color: #dcdcdc;
+
+  @include devices(tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @include devices(desktop) {
+    
+  }
+
+  &__Title {
+
+    @include devices(tablet) {
+      
+    }
+  
+    @include devices(desktop) {
+      
+    }
+  }
+
+  &__Text {
+
+    @include devices(tablet) {
+      
+    }
+  
+    @include devices(desktop) {
+      
+    }
+  }
+}

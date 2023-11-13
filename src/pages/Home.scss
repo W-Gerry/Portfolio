@@ -25,3 +25,27 @@
     top: 72rem;
   }
 }
+
+.Intro-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2rem;
+
+  width: 90%;
+
+  margin: 0 auto 4rem auto;
+
+  @include devices(tablet) {
+    flex-direction: row;
+
+    width: 100%;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @include devices(desktop) {
+    
+  }
+}

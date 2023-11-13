@@ -29,7 +29,7 @@ function About() {
           alt="Cover photo of a valley in Costa Rica"
         />
       </div>
-      <h1>Wasson Shag*</h1>
+      <h1>About Me</h1>
       <section className="container">
         <div className="Profile-intro">
           <img className="Profile-intro__image" src={profileImage} />
