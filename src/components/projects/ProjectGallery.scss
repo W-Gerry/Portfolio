@@ -43,11 +43,19 @@
   }
 
   &__text {
+    height: 18rem;
     padding: 1rem;
-    margin-bottom: 4rem;
     color: #dcdcdc;
     line-height: 24px;
     font-size: 1rem;
+
+    @include devices(tablet) {
+      font-size: 1.8rem;
+    }
+  
+    @include devices(desktop) {
+      font-size: 2rem;
+    }
 
     &__title {
       font-size: 2rem;
@@ -63,7 +71,19 @@
     }
 
     &__description {
-      font-size: 1rem;
+      height: 14rem;
+      font-size: $mobile-font-size-body;
+      
+      overflow-y: auto;
+
+      @include devices(tablet) {
+        height: 12rem;
+        font-size: $tablet-font-size-body;
+      }
+    
+      @include devices(desktop) {
+        font-size: $desktop-font-size-body;
+      }
     }
   }
 

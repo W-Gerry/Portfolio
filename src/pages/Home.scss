@@ -9,6 +9,10 @@
 
   @include devices(desktop) {
     width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -22,7 +26,9 @@
   }
 
   @include devices(desktop) {
-    top: 72rem;
+    margin: auto;
+    max-width: 100rem;
+    top: 80rem;
   }
 }
 
@@ -46,6 +52,8 @@
   }
 
   @include devices(desktop) {
-    
+    gap: 4rem;
+
+    margin-bottom: 8rem;
   }
 }

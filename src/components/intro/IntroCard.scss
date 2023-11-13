@@ -17,22 +17,25 @@
   &__Title {
 
     @include devices(tablet) {
-      
+      display: grid;
+      align-items: center;
+
+      height: 6.5rem;
     }
   
     @include devices(desktop) {
-      
+      height: 4rem;
     }
   }
 
   &__Text {
 
     @include devices(tablet) {
-      
+      font-size: $tablet-font-size-body;
     }
   
     @include devices(desktop) {
-      
+      font-size: $desktop-font-size-body;
     }
   }
 }
