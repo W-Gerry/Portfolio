@@ -3,6 +3,10 @@
 @use "../styles/sections" as *;
 @use "../styles/typography" as *;
 
+.Prevent-scroll {
+  overflow: hidden;
+}
+
 .Cover-image-container {
   width: 100%;
   height: 24rem;
