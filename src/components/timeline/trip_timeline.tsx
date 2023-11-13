@@ -1,8 +1,9 @@
 import "react-vertical-timeline-component/style.min.css";
 import "./trip_timeline.scss";
 
-import { disableBodyScroll } from 'body-scroll-lock';
+
 import { toShortWrittenDate } from "../../util/DateConversion";
+import { useScrollLock } from "../../util/ScrollLock";
 import trips from "../../data/trips";
 import Trip from "../../models/Trip";
 
@@ -15,8 +16,10 @@ interface TimelineProps {
 
 const TripTimeline = ({ isVisible, openModalAction } : TimelineProps) => {
 
+  const { lockScroll } = useScrollLock();
+
   return (
-    <div className={`Timeline-wrapper ${isVisible && `Timeline-visible`}`}>
+    <div className={`Timeline-wrapper ${isVisible && `Timeline-visible`}`} id="Timeline">
       <VerticalTimeline>
         {trips.map((trip) => 
           <VerticalTimelineElement
@@ -45,7 +48,7 @@ const TripTimeline = ({ isVisible, openModalAction } : TimelineProps) => {
               onClick={() => 
                 {
                   openModalAction(trip)
-                  disableBodyScroll
+                  lockScroll()
                 }}>
               <h3 className="vertical-timeline-element-title">{trip.country}</h3>
               <h4 className="vertical-timeline-element-subtitle">{trip.title}</h4>
