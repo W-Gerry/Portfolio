@@ -26,6 +26,7 @@ const projects: Project[] = [
         descriptionShort: "I developed a live bus timetable application using React to accept a user's postcode in London and provide live information using API requests for the nearest bus stops and arrivals.",
         descriptionLong: "Placeholder",
         imageUrls: [busboardImg,],
+        link: "https://playful-crisp-343da6.netlify.app/"
     },
     {
         name: "Photo Viewer",
