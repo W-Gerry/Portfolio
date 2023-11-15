@@ -22,7 +22,11 @@ const ProjectCard = (props: ProjectSummaryProps) => {
           onClick={() => window.open(project.link, "")}
         />
         <div className="Project-gallery__text">
-          <h2 className="Project-gallery__text__title">{project.name}</h2>
+          <h2 
+          className="Project-gallery__text__title Active-site" 
+          onClick={() => window.open(project.link, "")}
+          >
+            {project.name}</h2>
           <p className="Project-gallery__text__description">{project.descriptionShort}</p>
         </div>
       </div>
